@@ -1,0 +1,54 @@
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-11-23 16:45:00 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | ML_1MTOPK           
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_genre_c,i_title_c 
+ fs_hidden_units            | [256,64]            
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 1e-06               
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 1                   
+ mlp1_dropout               | 0.2                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 1                   
+ mlp2_dropout               | 0.5                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [64,64]             
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 0                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "../data/", dataset = "ML_1MTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 6032, "# item": 3125, "# entry": 574197
+INFO:root:Collect context features...
+INFO:root:Loading context for train set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for dev set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for test set...
+INFO:root:#Situation Feautures: 4

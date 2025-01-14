@@ -1,0 +1,305 @@
+INFO:root:Namespace(model_name='DeepFM', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-20 09:58:59 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments                  | Values      
+==========================================
+ batch_size                 | 1024       
+ data_appendix              | _context101
+ dataset                    | MINDCTR    
+ dropout                    | 0.2        
+ early_stop                 | 10         
+ emb_size                   | 64         
+ epoch                      | 200        
+ eval_batch_size            | 256        
+ gpu                        | 0          
+ include_item_features      | 1          
+ include_situation_features | 1          
+ include_user_features      | 0          
+ l2                         | 0.0        
+ layers                     | [512,64]   
+ loss_n                     | BCE        
+ lr                         | 0.0005     
+ main_metric                |            
+ num_neg                    | 0          
+ num_workers                | 1          
+ optimizer                  | Adam       
+ random_seed                | 0          
+ save_final_results         | 1          
+ test_all                   | 0          
+ topk                       | 5,10,20,50 
+==========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18426589
+INFO:root:DeepFMCTR(
+  (loss_fn): BCELoss()
+  (context_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (linear_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 1)
+    (i_subcategory_c): Embedding(196, 1)
+    (c_day_f): Linear(in_features=1, out_features=1, bias=False)
+    (c_hour_c): Embedding(24, 1)
+    (c_period_c): Embedding(9, 1)
+    (c_weekday_c): Embedding(7, 1)
+    (user_id): Embedding(269312, 1)
+    (item_id): Embedding(9373, 1)
+  )
+  (deep_layers): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.2, inplace=False)
+      (3): Linear(in_features=512, out_features=64, bias=True)
+      (4): ReLU()
+      (5): Dropout(p=0.2, inplace=False)
+      (6): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4917,LOG_LOSS@All:0.6968)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='DeepFM', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-20 10:09:15 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments                  | Values      
+==========================================
+ batch_size                 | 1024       
+ data_appendix              | _context101
+ dataset                    | MINDCTR    
+ dropout                    | 0.2        
+ early_stop                 | 10         
+ emb_size                   | 64         
+ epoch                      | 200        
+ eval_batch_size            | 256        
+ gpu                        | 0          
+ include_item_features      | 1          
+ include_situation_features | 1          
+ include_user_features      | 0          
+ l2                         | 0.0        
+ layers                     | [512,64]   
+ loss_n                     | BCE        
+ lr                         | 0.0005     
+ main_metric                |            
+ num_neg                    | 0          
+ num_workers                | 1          
+ optimizer                  | Adam       
+ random_seed                | 0          
+ save_final_results         | 1          
+ test_all                   | 0          
+ topk                       | 5,10,20,50 
+==========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18426589
+INFO:root:DeepFMCTR(
+  (loss_fn): BCELoss()
+  (context_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (linear_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 1)
+    (i_subcategory_c): Embedding(196, 1)
+    (c_day_f): Linear(in_features=1, out_features=1, bias=False)
+    (c_hour_c): Embedding(24, 1)
+    (c_period_c): Embedding(9, 1)
+    (c_weekday_c): Embedding(7, 1)
+    (user_id): Embedding(269312, 1)
+    (item_id): Embedding(9373, 1)
+  )
+  (deep_layers): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.2, inplace=False)
+      (3): Linear(in_features=512, out_features=64, bias=True)
+      (4): ReLU()
+      (5): Dropout(p=0.2, inplace=False)
+      (6): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+INFO:root:Namespace(model_name='DeepFM', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-20 10:18:10 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments                  | Values      
+==========================================
+ batch_size                 | 1024       
+ data_appendix              | _context101
+ dataset                    | MINDCTR    
+ dropout                    | 0.2        
+ early_stop                 | 10         
+ emb_size                   | 64         
+ epoch                      | 200        
+ eval_batch_size            | 256        
+ gpu                        | 0          
+ include_item_features      | 1          
+ include_situation_features | 1          
+ include_user_features      | 0          
+ l2                         | 0.0        
+ layers                     | [512,64]   
+ loss_n                     | BCE        
+ lr                         | 0.0005     
+ main_metric                |            
+ num_neg                    | 0          
+ num_workers                | 1          
+ optimizer                  | Adam       
+ random_seed                | 0          
+ save_final_results         | 1          
+ test_all                   | 0          
+ topk                       | 5,10,20,50 
+==========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18426589
+INFO:root:DeepFMCTR(
+  (loss_fn): BCELoss()
+  (context_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (linear_embedding): ModuleDict(
+    (i_category_c): Embedding(17, 1)
+    (i_subcategory_c): Embedding(196, 1)
+    (c_day_f): Linear(in_features=1, out_features=1, bias=False)
+    (c_hour_c): Embedding(24, 1)
+    (c_period_c): Embedding(9, 1)
+    (c_weekday_c): Embedding(7, 1)
+    (user_id): Embedding(269312, 1)
+    (item_id): Embedding(9373, 1)
+  )
+  (deep_layers): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.2, inplace=False)
+      (3): Linear(in_features=512, out_features=64, bias=True)
+      (4): ReLU()
+      (5): Dropout(p=0.2, inplace=False)
+      (6): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4917,LOG_LOSS@All:0.6968)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='DeepFM', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-21 23:34:59 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments                  | Values      
+==========================================
+ batch_size                 | 1024       
+ data_appendix              | _context101
+ dataset                    | MINDCTR    
+ dropout                    | 0.2        
+ early_stop                 | 10         
+ emb_size                   | 64         
+ epoch                      | 200        
+ eval_batch_size            | 256        
+ gpu                        | 0          
+ include_item_features      | 1          
+ include_situation_features | 1          
+ include_user_features      | 0          
+ l2                         | 0.0        
+ layers                     | [512,64]   
+ loss_n                     | BCE        
+ lr                         | 0.0005     
+ main_metric                |            
+ num_neg                    | 0          
+ num_workers                | 1          
+ optimizer                  | Adam       
+ random_seed                | 0          
+ save_final_results         | 1          
+ test_all                   | 0          
+ topk                       | 5,10,20,50 
+==========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 1855034
+INFO:root:DeepFMCTR(
+  (loss_fn): BCELoss()
+  (context_embedding): ModuleDict(
+    (i_category_c): Embedding(15, 64)
+    (i_subcategory_c): Embedding(161, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(20597, 64)
+    (item_id): Embedding(3178, 64)
+  )
+  (linear_embedding): ModuleDict(
+    (i_category_c): Embedding(15, 1)
+    (i_subcategory_c): Embedding(161, 1)
+    (c_day_f): Linear(in_features=1, out_features=1, bias=False)
+    (c_hour_c): Embedding(24, 1)
+    (c_period_c): Embedding(9, 1)
+    (c_weekday_c): Embedding(7, 1)
+    (user_id): Embedding(20597, 1)
+    (item_id): Embedding(3178, 1)
+  )
+  (deep_layers): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.2, inplace=False)
+      (3): Linear(in_features=512, out_features=64, bias=True)
+      (4): ReLU()
+      (5): Dropout(p=0.2, inplace=False)
+      (6): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4831,LOG_LOSS@All:0.6687)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.1735 [48.6 s]	dev=(AUC@All:0.6730,LOG_LOSS@All:0.1697) [2.3 s] *
+INFO:root:Epoch 2     loss=0.1633 [47.6 s]	dev=(AUC@All:0.6815,LOG_LOSS@All:0.1745) [2.5 s] *
+INFO:root:Epoch 3     loss=0.1574 [47.9 s]	dev=(AUC@All:0.6930,LOG_LOSS@All:0.1767) [2.3 s] *
+INFO:root:Epoch 4     loss=0.1494 [48.5 s]	dev=(AUC@All:0.6957,LOG_LOSS@All:0.1765) [2.6 s] *
+INFO:root:Epoch 5     loss=0.1425 [47.8 s]	dev=(AUC@All:0.6918,LOG_LOSS@All:0.1796) [2.6 s]
+INFO:root:Epoch 6     loss=0.1360 [47.7 s]	dev=(AUC@All:0.6909,LOG_LOSS@All:0.1825) [2.3 s]
+INFO:root:Epoch 7     loss=0.1295 [47.8 s]	dev=(AUC@All:0.6901,LOG_LOSS@All:0.1870) [2.5 s]
+INFO:root:Epoch 8     loss=0.1233 [47.5 s]	dev=(AUC@All:0.6858,LOG_LOSS@All:0.1895) [2.3 s]
+INFO:root:Epoch 9     loss=0.1176 [48.1 s]	dev=(AUC@All:0.6789,LOG_LOSS@All:0.1988) [2.6 s]
+INFO:root:Epoch 10    loss=0.1121 [47.5 s]	dev=(AUC@All:0.6747,LOG_LOSS@All:0.2074) [2.5 s]
+INFO:root:Epoch 11    loss=0.1067 [47.5 s]	dev=(AUC@All:0.6676,LOG_LOSS@All:0.2201) [2.9 s]
+INFO:root:Epoch 12    loss=0.1014 [47.7 s]	dev=(AUC@All:0.6607,LOG_LOSS@All:0.2358) [2.6 s]
+INFO:root:Epoch 13    loss=0.0963 [48.0 s]	dev=(AUC@All:0.6578,LOG_LOSS@All:0.2481) [2.6 s]
+INFO:root:Early stop at 13 based on dev result.
+INFO:root:
+Best Iter(dev)=    4	 dev=(AUC@All:0.6957,LOG_LOSS@All:0.1765) [655.0 s] 
+INFO:root:Load model from ../model/DeepFMCTR/DeepFMCTR__MINDCTR_context101__0__lr=0.0005__l2=0.0__emb_size=64__layers=[512,64]__loss_n=BCE.pt
+INFO:root:
+Dev  After Training: (AUC@All:0.6957,LOG_LOSS@All:0.1765)
+INFO:root:
+Test After Training: (AUC@All:0.6459,LOG_LOSS@All:0.1384)
+INFO:root:Saving CTR prediction results to: ../log/DeepFMCTR/DeepFMCTR__MINDCTR_context101__0__lr=0/rec-DeepFMCTR-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving CTR prediction results to: ../log/DeepFMCTR/DeepFMCTR__MINDCTR_context101__0__lr=0/rec-DeepFMCTR-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-21 23:46:15 ---------------------------------------------

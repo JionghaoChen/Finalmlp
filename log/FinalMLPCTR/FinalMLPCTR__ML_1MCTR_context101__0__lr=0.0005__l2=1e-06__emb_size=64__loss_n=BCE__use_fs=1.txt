@@ -1,0 +1,298 @@
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-26 11:40:45 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | ML_1MCTR            
+ dropout                    | 0                   
+ early_stop                 | 15                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_genre_c,i_title_c 
+ fs_hidden_units            | [256,64]            
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 1e-06               
+ loss_n                     | BCE                 
+ lr                         | 0.0005              
+ main_metric                |                     
+ mlp1_batch_norm            | 1                   
+ mlp1_dropout               | 0.2                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 1                   
+ mlp2_dropout               | 0.5                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [64,64]             
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/ML_1MCTR/ContextReader_context101.pkl
+INFO:root:#params: 1302594
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_genre_c): Embedding(298, 64)
+    (i_title_c): Embedding(3126, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(6035, 64)
+    (item_id): Embedding(3126, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.2, inplace=False)
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=64, out_features=64, bias=True)
+      (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(298, 64)
+      (1): Embedding(3126, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=64, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=64, out_features=512, bias=True)
+        (5): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=64, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=64, out_features=512, bias=True)
+        (5): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4936,LOG_LOSS@All:0.6931)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5820 [15.7 s]	dev=(AUC@All:0.7751,LOG_LOSS@All:0.5664) [0.8 s] *
+INFO:root:Epoch 2     loss=0.5340 [15.4 s]	dev=(AUC@All:0.7774,LOG_LOSS@All:0.5655) [0.8 s] *
+INFO:root:Epoch 3     loss=0.5244 [15.8 s]	dev=(AUC@All:0.7760,LOG_LOSS@All:0.5673) [1.4 s]
+INFO:root:Epoch 4     loss=0.5155 [15.0 s]	dev=(AUC@All:0.7783,LOG_LOSS@All:0.5683) [0.7 s] *
+INFO:root:Epoch 5     loss=0.5099 [15.4 s]	dev=(AUC@All:0.7745,LOG_LOSS@All:0.5744) [0.6 s]
+INFO:root:Epoch 6     loss=0.5053 [15.6 s]	dev=(AUC@All:0.7711,LOG_LOSS@All:0.5806) [0.9 s]
+INFO:root:Epoch 7     loss=0.5010 [15.0 s]	dev=(AUC@All:0.7722,LOG_LOSS@All:0.5830) [0.6 s]
+INFO:root:Epoch 8     loss=0.4959 [15.6 s]	dev=(AUC@All:0.7651,LOG_LOSS@All:0.5985) [1.3 s]
+INFO:root:Epoch 9     loss=0.4900 [15.0 s]	dev=(AUC@All:0.7641,LOG_LOSS@All:0.6029) [0.8 s]
+INFO:root:Epoch 10    loss=0.4841 [15.4 s]	dev=(AUC@All:0.7675,LOG_LOSS@All:0.5924) [0.6 s]
+INFO:root:Epoch 11    loss=0.4784 [15.4 s]	dev=(AUC@All:0.7572,LOG_LOSS@All:0.6096) [0.9 s]
+INFO:root:Epoch 12    loss=0.4724 [15.0 s]	dev=(AUC@All:0.7612,LOG_LOSS@All:0.6105) [0.6 s]
+INFO:root:Epoch 13    loss=0.4668 [15.6 s]	dev=(AUC@All:0.7648,LOG_LOSS@All:0.6152) [1.4 s]
+INFO:root:Epoch 14    loss=0.4614 [14.8 s]	dev=(AUC@All:0.7600,LOG_LOSS@All:0.6165) [0.6 s]
+INFO:root:Epoch 15    loss=0.4556 [15.0 s]	dev=(AUC@All:0.7687,LOG_LOSS@All:0.6059) [0.8 s]
+INFO:root:Epoch 16    loss=0.4500 [15.3 s]	dev=(AUC@All:0.7624,LOG_LOSS@All:0.6114) [1.1 s]
+INFO:root:Epoch 17    loss=0.4443 [14.9 s]	dev=(AUC@All:0.7648,LOG_LOSS@All:0.6144) [0.8 s]
+INFO:root:Epoch 18    loss=0.4389 [14.8 s]	dev=(AUC@All:0.7628,LOG_LOSS@All:0.6164) [0.6 s]
+INFO:root:Early stop at 18 based on dev result.
+INFO:root:
+Best Iter(dev)=    4	 dev=(AUC@All:0.7783,LOG_LOSS@All:0.5683) [290.2 s] 
+INFO:root:Load model from ../model/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0.0005__l2=1e-06__emb_size=64__loss_n=BCE__use_fs=1.pt
+INFO:root:
+Dev  After Training: (AUC@All:0.7783,LOG_LOSS@All:0.5683)
+INFO:root:
+Test After Training: (AUC@All:0.7788,LOG_LOSS@All:0.5629)
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0/rec-FinalMLPCTR-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0/rec-FinalMLPCTR-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-26 11:45:43 ---------------------------------------------
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-26 16:57:43 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | ML_1MCTR            
+ dropout                    | 0                   
+ early_stop                 | 15                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_genre_c,i_title_c 
+ fs_hidden_units            | [256,64]            
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 1e-06               
+ loss_n                     | BCE                 
+ lr                         | 0.0005              
+ main_metric                |                     
+ mlp1_batch_norm            | 1                   
+ mlp1_dropout               | 0.2                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 1                   
+ mlp2_dropout               | 0.5                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [64,64]             
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/ML_1MCTR/ContextReader_context101.pkl
+INFO:root:#params: 1302594
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_genre_c): Embedding(298, 64)
+    (i_title_c): Embedding(3126, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(6035, 64)
+    (item_id): Embedding(3126, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.2, inplace=False)
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=64, out_features=64, bias=True)
+      (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(298, 64)
+      (1): Embedding(3126, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=64, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=64, out_features=512, bias=True)
+        (5): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=64, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=64, out_features=512, bias=True)
+        (5): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4936,LOG_LOSS@All:0.6931)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5820 [21.3 s]	dev=(AUC@All:0.7751,LOG_LOSS@All:0.5664) [0.8 s] *
+INFO:root:Epoch 2     loss=0.5340 [15.1 s]	dev=(AUC@All:0.7774,LOG_LOSS@All:0.5655) [0.6 s] *
+INFO:root:Epoch 3     loss=0.5244 [15.2 s]	dev=(AUC@All:0.7760,LOG_LOSS@All:0.5673) [0.9 s]
+INFO:root:Epoch 4     loss=0.5155 [14.9 s]	dev=(AUC@All:0.7783,LOG_LOSS@All:0.5683) [0.6 s] *
+INFO:root:Epoch 5     loss=0.5099 [15.5 s]	dev=(AUC@All:0.7745,LOG_LOSS@All:0.5744) [1.2 s]
+INFO:root:Epoch 6     loss=0.5053 [14.9 s]	dev=(AUC@All:0.7711,LOG_LOSS@All:0.5806) [0.8 s]
+INFO:root:Epoch 7     loss=0.5010 [15.5 s]	dev=(AUC@All:0.7722,LOG_LOSS@All:0.5830) [1.2 s]
+INFO:root:Epoch 8     loss=0.4959 [14.9 s]	dev=(AUC@All:0.7651,LOG_LOSS@All:0.5985) [0.8 s]
+INFO:root:Epoch 9     loss=0.4900 [14.8 s]	dev=(AUC@All:0.7641,LOG_LOSS@All:0.6029) [0.6 s]
+INFO:root:Epoch 10    loss=0.4841 [14.9 s]	dev=(AUC@All:0.7675,LOG_LOSS@All:0.5924) [0.8 s]
+INFO:root:Epoch 11    loss=0.4784 [14.8 s]	dev=(AUC@All:0.7572,LOG_LOSS@All:0.6096) [0.6 s]
+INFO:root:Epoch 12    loss=0.4724 [14.9 s]	dev=(AUC@All:0.7612,LOG_LOSS@All:0.6105) [0.7 s]
+INFO:root:Epoch 13    loss=0.4668 [14.9 s]	dev=(AUC@All:0.7648,LOG_LOSS@All:0.6152) [1.0 s]
+INFO:root:Epoch 14    loss=0.4614 [14.8 s]	dev=(AUC@All:0.7600,LOG_LOSS@All:0.6165) [0.6 s]
+INFO:root:Epoch 15    loss=0.4556 [14.9 s]	dev=(AUC@All:0.7687,LOG_LOSS@All:0.6059) [1.2 s]
+INFO:root:Epoch 16    loss=0.4500 [14.9 s]	dev=(AUC@All:0.7624,LOG_LOSS@All:0.6114) [1.2 s]
+INFO:root:Epoch 17    loss=0.4443 [14.9 s]	dev=(AUC@All:0.7648,LOG_LOSS@All:0.6144) [0.7 s]
+INFO:root:Epoch 18    loss=0.4389 [14.9 s]	dev=(AUC@All:0.7628,LOG_LOSS@All:0.6164) [0.8 s]
+INFO:root:Early stop at 18 based on dev result.
+INFO:root:
+Best Iter(dev)=    4	 dev=(AUC@All:0.7783,LOG_LOSS@All:0.5683) [291.1 s] 
+INFO:root:Load model from ../model/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0.0005__l2=1e-06__emb_size=64__loss_n=BCE__use_fs=1.pt
+INFO:root:
+Dev  After Training: (AUC@All:0.7783,LOG_LOSS@All:0.5683)
+INFO:root:
+Test After Training: (AUC@All:0.7788,LOG_LOSS@All:0.5629)
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0/rec-FinalMLPCTR-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__ML_1MCTR_context101__0__lr=0/rec-FinalMLPCTR-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-26 17:02:48 ---------------------------------------------

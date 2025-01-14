@@ -1,0 +1,1740 @@
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-11-22 20:23:29 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-11-22 20:24:58 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-11-23 16:27:34 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-11-23 16:28:09 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 0                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-18 22:14:11 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 269311, "# item": 9372, "# entry": 45612425
+INFO:root:"# positive interaction": 1915965 (4.2%)
+INFO:root:Collect context features...
+INFO:root:Loading context for train set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for dev set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for test set...
+INFO:root:#Situation Feautures: 4
+INFO:root:# Item Features: 3
+INFO:root:Save corpus to ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 10:55:22 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 11:22:55 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 11:33:13 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 5                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 12:33:30 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 12:34:29 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 19:35:11 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 20:04:32 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 20:35:33 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 20:42:52 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-19 20:44:39 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-21 10:26:38 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-21 15:59:47 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 18140546
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(17, 64)
+    (i_subcategory_c): Embedding(196, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(269312, 64)
+    (item_id): Embedding(9373, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(17, 64)
+      (1): Embedding(196, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4456,LOG_LOSS@All:0.6918)
+INFO:root:Optimizer: Adam
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-21 21:42:24 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:Namespace(model_name='FinalMLP', model_mode='CTR')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-21 22:11:53 ---------------------------------------------
+INFO:root:
+===================================================
+ Arguments                  | Values               
+===================================================
+ batch_size                 | 1024                
+ data_appendix              | _context101         
+ dataset                    | MINDCTR             
+ dropout                    | 0                   
+ early_stop                 | 10                  
+ emb_size                   | 64                  
+ epoch                      | 200                 
+ eval_batch_size            | 256                 
+ fs1_context                | c_hour_c,c_weekda...
+ fs2_context                | i_category_c,i_su...
+ fs_hidden_units            | [64]                
+ gpu                        | 0                   
+ include_item_features      | 1                   
+ include_situation_features | 1                   
+ include_user_features      | 0                   
+ l2                         | 0.0                 
+ loss_n                     | BCE                 
+ lr                         | 0.005               
+ main_metric                |                     
+ mlp1_batch_norm            | 0                   
+ mlp1_dropout               | 0.0                 
+ mlp1_hidden_activations    | ReLU                
+ mlp1_hidden_units          | [64]                
+ mlp2_batch_norm            | 0                   
+ mlp2_dropout               | 0.0                 
+ mlp2_hidden_activations    | ReLU                
+ mlp2_hidden_units          | [256]               
+ num_heads                  | 1                   
+ num_neg                    | 0                   
+ num_workers                | 1                   
+ optimizer                  | Adam                
+ random_seed                | 0                   
+ save_final_results         | 1                   
+ test_all                   | 0                   
+ topk                       | 5,10,20,50          
+ use_fs                     | 1                   
+===================================================
+INFO:root:Device: cuda
+INFO:root:Reading data from "../data/", dataset = "MINDCTR" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 20596, "# item": 3177, "# entry": 3793769
+INFO:root:"# positive interaction": 165925 (4.4%)
+INFO:root:Collect context features...
+INFO:root:Loading context for train set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for dev set...
+INFO:root:#Situation Feautures: 4
+INFO:root:Loading context for test set...
+INFO:root:#Situation Feautures: 4
+INFO:root:# Item Features: 3
+INFO:root:Save corpus to ../data/MINDCTR/ContextReader_context101.pkl
+INFO:root:#params: 1821570
+INFO:root:FinalMLPCTR(
+  (loss_fn): BCELoss()
+  (embedding_dict): ModuleDict(
+    (i_category_c): Embedding(15, 64)
+    (i_subcategory_c): Embedding(161, 64)
+    (c_day_f): Linear(in_features=1, out_features=64, bias=False)
+    (c_hour_c): Embedding(24, 64)
+    (c_period_c): Embedding(9, 64)
+    (c_weekday_c): Embedding(7, 64)
+    (user_id): Embedding(20597, 64)
+    (item_id): Embedding(3178, 64)
+  )
+  (mlp1): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=64, bias=True)
+      (1): ReLU()
+    )
+  )
+  (mlp2): MLP_Block(
+    (mlp): Sequential(
+      (0): Linear(in_features=512, out_features=256, bias=True)
+      (1): ReLU()
+    )
+  )
+  (fs_module): FeatureSelection(
+    (fs1_ctx_emb): ModuleList(
+      (0): Embedding(24, 64)
+      (1): Embedding(7, 64)
+      (2): Embedding(9, 64)
+      (3): Linear(in_features=1, out_features=64, bias=True)
+    )
+    (fs2_ctx_emb): ModuleList(
+      (0): Embedding(15, 64)
+      (1): Embedding(161, 64)
+    )
+    (fs1_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=256, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+    (fs2_gate): MLP_Block(
+      (mlp): Sequential(
+        (0): Linear(in_features=128, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=512, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+  (fusion_module): InteractionAggregation(
+    (w_x): Linear(in_features=64, out_features=1, bias=True)
+    (w_y): Linear(in_features=256, out_features=1, bias=True)
+  )
+)
+INFO:root:Test Before Training: (AUC@All:0.4943,LOG_LOSS@All:0.6884)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.1695 [75.7 s]	dev=(AUC@All:0.6851,LOG_LOSS@All:0.1618) [2.6 s] *
+INFO:root:Epoch 2     loss=0.1635 [50.9 s]	dev=(AUC@All:0.6868,LOG_LOSS@All:0.1631) [2.8 s] *
+INFO:root:Epoch 3     loss=0.1582 [49.9 s]	dev=(AUC@All:0.6893,LOG_LOSS@All:0.1652) [2.4 s] *
+INFO:root:Epoch 4     loss=0.1518 [50.3 s]	dev=(AUC@All:0.6916,LOG_LOSS@All:0.1674) [2.5 s] *
+INFO:root:Epoch 5     loss=0.1453 [49.9 s]	dev=(AUC@All:0.6840,LOG_LOSS@All:0.1831) [2.5 s]
+INFO:root:Epoch 6     loss=0.1388 [50.7 s]	dev=(AUC@All:0.6722,LOG_LOSS@All:0.1981) [2.5 s]
+INFO:root:Epoch 7     loss=0.1328 [50.5 s]	dev=(AUC@All:0.6655,LOG_LOSS@All:0.2244) [2.6 s]
+INFO:root:Epoch 8     loss=0.1273 [50.4 s]	dev=(AUC@All:0.6606,LOG_LOSS@All:0.2401) [2.4 s]
+INFO:root:Epoch 9     loss=0.1223 [50.4 s]	dev=(AUC@All:0.6515,LOG_LOSS@All:0.2643) [2.4 s]
+INFO:root:Epoch 10    loss=0.1177 [50.1 s]	dev=(AUC@All:0.6545,LOG_LOSS@All:0.2803) [3.1 s]
+INFO:root:Epoch 11    loss=0.1135 [50.6 s]	dev=(AUC@All:0.6378,LOG_LOSS@All:0.3181) [2.6 s]
+INFO:root:Epoch 12    loss=0.1095 [50.5 s]	dev=(AUC@All:0.6416,LOG_LOSS@All:0.3210) [2.6 s]
+INFO:root:Epoch 13    loss=0.1059 [50.7 s]	dev=(AUC@All:0.6395,LOG_LOSS@All:0.3355) [2.7 s]
+INFO:root:Early stop at 13 based on dev result.
+INFO:root:
+Best Iter(dev)=    4	 dev=(AUC@All:0.6916,LOG_LOSS@All:0.1674) [715.6 s] 
+INFO:root:Load model from ../model/FinalMLPCTR/FinalMLPCTR__MINDCTR_context101__0__lr=0.005__l2=0.0__emb_size=64__loss_n=BCE__use_fs=1.pt
+INFO:root:
+Dev  After Training: (AUC@All:0.6916,LOG_LOSS@All:0.1674)
+INFO:root:
+Test After Training: (AUC@All:0.6427,LOG_LOSS@All:0.1335)
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__MINDCTR_context101__0__lr=0/rec-FinalMLPCTR-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving CTR prediction results to: ../log/FinalMLPCTR/FinalMLPCTR__MINDCTR_context101__0__lr=0/rec-FinalMLPCTR-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-21 22:24:43 ---------------------------------------------
