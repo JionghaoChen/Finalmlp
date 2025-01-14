@@ -1,4 +1,4 @@
-# FinalMLP
+# FinalMLP By ReChorus
 
 ## 数据集选择
 
